@@ -3,18 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    App
+    App,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    provideHttpClient(withInterceptorsFromDi())
   ],
+
   bootstrap: [App]
 })
 export class AppModule { }
