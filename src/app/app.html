@@ -33,7 +33,6 @@
           class="p-2 hover-bg-light transition-colors navbar-brand fs-4 fw-bold text-dark"
           href="#home"
           >🔙
-          <!-- rounded-3 -->
         </a>
         <button
           class="navbar-toggler"
@@ -157,10 +156,10 @@
           [src]="['../assets/rehamCV.jpeg']"
           [alt]="profile.name"
           (error)="onImageError($event, 'profile')"
-          class="img-fluid rounded-circle mx-auto mb-4shadow transition-transform hover-scale-150"
+          class="rounded-circle rehamImg img-fluid mx-auto mb-4shadow transition-transform hover-scale-150"
           style="width: 300px; height: 300px; object-fit: cover; margin: 15px"
         />
-
+        <!-- rounded-circle -->
         <!-- <span>
           <img
             [src]="['../assets/avatar.png']"
@@ -177,16 +176,25 @@
         </span> -->
 
         <!-- border border-5 border-white  -->
-        <h2 class="display-3 fw-bolder mb-3">
+        <h2 class="display-3 fw-bolder mb-3" style="color: rgb(165, 216, 255)">
           Software Engineer -
           <span class="text-warning">{{ profile?.name }}</span>
         </h2>
-        <h5 class="fs-4 fw-light mb-5 mx-auto">
-          {{ profile?.title }}
-        </h5>
+        <h4
+          class="fs-4 fw-light mb-5 mx-auto"
+          style="
+            color: rgb(165, 216, 255);
+            font-family: cursive;
+            text-shadow: 1px 1px 1px goldenrod;
+          "
+        >
+          FullStack Engineer
+          <!-- {{ profile?.title }}
+             -->
+        </h4>
         <div
           class="d-flex justify-content-center"
-          style="transform: scale(1.5)"
+          style="transform: scale(1.2); justify-self: center"
         >
           <span>
             <a
@@ -206,7 +214,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 data-supported-dps="24x24"
-                fill="white"
+                fill="rgb(165, 216, 255)"
                 class="mercado-match"
                 width="24"
                 height="24"
@@ -229,7 +237,7 @@
               [href]="profile.socialLinks['oldWebsite']"
               target="_blank"
               rel="noopener noreferrer"
-              style="font-size: xx-small; color: whitesmoke"
+              style="font-size: xx-small; color: rgb(165, 216, 255)"
               class="text-decoration-none social-links px-4 py-2 fs-5 fw-semibold transition-transform hover-scale-105"
             >
               Web
@@ -238,43 +246,44 @@
 
           <span>
             <button
-              class="text-decoration-none social-links px-4 py-2 fs-5 fw-semibold transition-transform hover-scale-105"
+              class="text-decoration-none social-links px-4 fs-5 fw-semibold transition-transform hover-scale-105"
               (click)="downloadPdf('reham_abass_resume.pdf')"
               style="
                 font-size: xx-small;
                 background-color: transparent;
                 border: none;
-                color: whitesmoke;
+                color: rgb(165, 216, 255);
               "
             >
               Download CV📄
             </button>
           </span>
 
-          <span>
+          <span style="padding: 0; margin-top: -15px">
             <a
               href="https://github.com/rehamAbass"
               target="_blank"
               placehold="GitHub"
-              matTooltip="Github"
               class="github-corner"
               aria-label="View source on GitHub"
-              style="transform: scale(1.5)"
+              style="transform: scale(1.2)"
             >
+              <!--                   position: relative; -->
               <svg
                 width="80"
                 height="80"
                 viewBox="0 0 250 250"
                 style="
-                  position: relative;
                   fill: transparent;
                   border: 0;
                   transform: rotate(-45deg);
-                  color: white;
-                  box-shadow: 0px 1px 1px 1px rgb(195, 161, 60);
+                  color: rgb(165, 216, 255);
+                  background: radial-gradient(transparent, transparent);
                 "
                 aria-hidden="true"
               >
+                <!--  rgb(0, 0, 130),
+                    rgb(0, 0, 200), -->
                 <path
                   d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"
                 ></path>
@@ -462,7 +471,7 @@
             color: rgb(0, 21, 159);
             font-style: italic;
             font-weight: bolder;
-            text-shadow: 1px 1px 1px saddlebrown;
+            text-shadow: 1px 1px 1px rgb(184, 141, 0);
           "
         >
           Get In Touch
@@ -482,9 +491,11 @@
         <div class="d-flex justify-content-center">
           <a
             href="mailto:soft.rehamabass@gmail.com"
-            class="btn btn-light text-primary px-4 py-4 fs-5 fw-semibold shadow-sm transition-transform hover-scale-105"
+            class="btn btn-light text-primary px-4 py-4 fs-5 fw-semibold shadow-sm transition-transform hover-scale-105 rounded-4"
+            style="background-color: rgb(165, 216, 255)"
             >Email Me
           </a>
+          <!--   style="background: radial-gradient(#007415, black)" -->
         </div>
       </div>
     </section>

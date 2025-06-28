@@ -3,13 +3,25 @@
     /* font-family: serif; */
   }
 
+
+  /* -------------------------------------------------------------------- */
+
+  .rehamImg :hover {
+    transform: scale(1.4);
+  }
+
+  /* -------------------------------------------------------------------- */
+
+
   .bg-gradient-primary {
-    background: linear-gradient(to right, #8b8b8ba6, #000b53fa, #273b53da);
+    background: linear-gradient(to right, #4f505c, #000e67fa, #47578bf6);
     text-align: center;
     padding: 10px;
   }
 
   .bg-gradient-secondary {
+    /* background: radial-gradient(hsla(245, 93%, 28%, 0.786), hsl(274, 13%, 34%)); */
+    /* background: radial-gradient(#5347ff, transparent); */
     background: linear-gradient(to right, #8b8b8ba6, #001079fa);
   }
 
